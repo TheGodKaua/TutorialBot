@@ -17,7 +17,7 @@ module.exports.run = async (client, message, args) => {
       let pEmbed = new Discord.RichEmbed()
           .setTitle(":hammer: Ban")
           .addField("Membro Banido:", `${member.user.tag}`)
-          .addField("Banido por:", `${message.auhtor.tag}`)
+          .addField("Banido por:", `${message.author.tag}`)
           .addField("Motivo:", `${reason}`)
           .setFooter(`${message.auhtor.tag}`, message.author.displayAvatarURL)
           .setColor("DARK_RED").setTimestamp()
