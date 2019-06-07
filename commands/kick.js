@@ -19,7 +19,7 @@ module.exports.run = async (client, message, args) => {
           .addField("Membro Kickado:", `${member.user.tag}`)
           .addField("Kickado por:", `${message.author.tag}`)
           .addField("Motivo:", `${reason}`)
-          .setFooter(`${message.auhtor.tag}`, message.author.displayAvatarURL)
+          .setFooter(`${message.author.tag}`, message.author.displayAvatarURL)
           .setColor("DARK_RED").setTimestamp()
 
           message.channel.send(pEmbed)
